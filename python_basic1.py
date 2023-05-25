@@ -1,9 +1,14 @@
-a = 6
-b = 8
-print(f"The value in a = {a}\nThe Value in b = {b}")
-# Swapping from here
-a, b = b, a
+# Program to get user data and print out
+print("Input your Name, Age, PhoneNumber")
+name = input("Enter your name: ")
+age = int(input("Input your age: "))
+phoneNum = input("Your Phone Number: ")
+# print out the numbers
+print(f"Hello,{name} You're, {age} years old with the phone number {phoneNum}") 
 
-print("\n")
 
-print(f"The value in a = {a}\nThe Value in b = {c}")
+
+
+
+
+
