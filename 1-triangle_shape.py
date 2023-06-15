@@ -1,14 +1,11 @@
-try: 
-   userIn = int(input("Enter : "))
-
-   if n%2!=0:
-      for i in range(userIn):
-          for j in range(i):
-              print(" ", end="")
-          for j in range(userIn-i):
-              print("*", end=" ")
-          print()
-   else:
-       print("Should be an odd number")
-except:
-    print("Enter number only")
+try:
+    num = int(input("Enter an odd number: "))  # take input from user
+    if num % 2 == 0:
+        raise ValueError("Number should be odd!")
+    for i in range(num, 0, -2):  # loop to generate pattern
+        asterisks = "*" * i
+        print(asterisks.center(num + 2))
+except ValueError as ve:
+    print("Error:", ve)
+except Exception as e:
+    print("Error:", e)
